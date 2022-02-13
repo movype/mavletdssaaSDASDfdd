@@ -1,0 +1,2536 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900i&display=swap");
+@import url("libs/alert.css");
+@import url("libs/aos.css");
+@import url("libs/bootstrap.min.css");
+@import url("libs/nice-select/nice-select.css");
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: #353431
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(247, 183, 22, 0.5);
+    transition: 0.3s all
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: 0.3s all;
+    background: #f7b716
+}
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    min-height: 100vh;
+    background: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    color: #fff
+}
+
+body.index {
+    background: url(img/background_index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+body.play {
+    background: url(img/background_play.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.no_scroll {
+    overflow: hidden
+}
+
+header {
+    background: #ffffff
+}
+
+header .row {
+    height: 70px;
+    align-items: center
+}
+
+header .row .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+header .row .logo img {
+    width: 100%
+}
+
+header .row .logo .favicon {
+    display: none
+}
+
+header .row .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%
+}
+
+header .row .menu .mobile_menu {
+    display: none
+    
+}
+
+header .row .menu .language button {
+    width: 60px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 10px;
+    border-radius: 0px;
+    outline: none;
+    height: 45px;
+    background: #353431
+}
+
+header .row .menu .language button:focus {
+    outline: none;
+    border: none
+}
+
+header .row .menu .language button img {
+    width: 20px
+}
+
+header .row .menu .language button i {
+    margin-bottom: 5px
+}
+
+header .row .menu .language .dropdown-menu {
+    background: #353431;
+    border: none;
+    border-radius: 0px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0
+}
+
+header .row .menu .language .dropdown-menu .dropdown-item {
+    padding: 5px 6px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff
+}
+
+header .row .menu .language .dropdown-menu .dropdown-item img {
+    margin-left: 10px;
+    width: 20px
+}
+
+header .row .menu .language .dropdown-menu .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1)
+}
+
+header .row .menu .nav_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%
+}
+
+header .row .menu .nav_menu .otherdrop {
+    height: 100%
+}
+
+header .row .menu .nav_menu .otherdrop li {
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    color: #353431;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px
+}
+
+header .row .menu .nav_menu .otherdrop li:hover,
+header .row .menu .nav_menu .otherdrop li.active {
+    padding-top: 4px;
+    color: #af0000;
+    border-bottom: 4px solid #af0000
+}
+
+header .row .menu .nav_menu .otherdrop .dropdown-menu {
+    background: #353431;
+    border: none;
+    border-radius: 0px;
+    min-width: 0px;
+    margin: 0;
+    padding: 0
+}
+
+header .row .menu .nav_menu .otherdrop .dropdown-menu .dropdown-item {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff
+}
+
+header .row .menu .nav_menu .otherdrop .dropdown-menu .dropdown-item img {
+    margin-left: 10px;
+    width: 20px
+}
+
+header .row .menu .nav_menu .otherdrop .dropdown-menu .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1)
+}
+
+header .row .menu .nav_menu a {
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    color: #353431
+}
+
+header .row .menu .nav_menu a li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px
+}
+
+header .row .menu .nav_menu a li:hover,
+header .row .menu .nav_menu a li.active {
+    padding-top: 4px;
+    color: #af0000;
+    border-bottom: 4px solid #af0000
+}
+
+header .row .profile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+header .row .profile .profile_block {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background: #af0000;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header .row .profile .profile_block i {
+    display: none
+}
+
+.modal_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.6)
+}
+
+.modal_wrap .row {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.modal_wrap .row .modal_block {
+    display: none;
+    width: 100%;
+    padding: 27px 30px;
+    position: relative;
+    transition: 0.3s all;
+    transform: scale(0);
+    box-shadow: 0px 8px 40px 0px rgba(241, 190, 0, 0.24)
+}
+
+.modal_wrap .row .modal_block.active {
+    transition: 0.3s all;
+    transform: scale(1)
+}
+
+.modal_wrap .row .modal_block.login {
+    background: url(img/modal_login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px
+}
+
+.modal_wrap .row .modal_block.dropgame {
+    width: 695px;
+    background: url(img/modal_drop.png);
+    background-position: center;
+    background-size: cover;
+    height: 390px;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.modal_wrap .row .modal_block.dropgame.active {
+    display: flex
+}
+
+.modal_wrap .row .modal_block.dropgame .content {
+    max-width: 412px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header .imageDrop {
+    width: 115px;
+    height: 115px;
+    background: #30291e;
+    border-radius: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header .imageDrop img {
+    width: 70%
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header .info {
+    width: calc(100% - 132px);
+    display: flex;
+    flex-direction: column;
+    color: #1d1a15
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header .info .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+.modal_wrap .row .modal_block.dropgame .content .header .info .value {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.modal_wrap .row .modal_block.dropgame .content button {
+    width: 100%;
+    height: 46px;
+    background: #2b251d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 30px;
+    border: none;
+    outline: none
+}
+
+.modal_wrap .row .modal_block.dropgame .content button:hover {
+    background: #2b251d url(hover_btn.png);
+    background-position: center;
+    background-size: cover
+}
+
+.modal_wrap .row .modal_block .close_modal {
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer
+}
+
+.modal_wrap.active {
+    display: block
+}
+
+.title_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.title_section.black .text {
+    color: #353431
+}
+
+.title_section .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.title_section .line {
+    width: 50px;
+    height: 7px;
+    background: #fff
+}
+
+.title_section.black .line {
+    background: #353431
+}
+
+.game_section .row {
+    padding: 100px 0px
+}
+
+.game_section .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.game_section .header .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column
+}
+
+.game_section .header .title .line {
+    width: 50px;
+    height: 7px;
+    background: #af0000;
+    margin-top: 10px
+}
+
+.game_section .header .actions {
+    display: flex;
+    align-items: center
+}
+
+.game_section .header .actions .drop_list {
+    width: 161px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 8px;
+    background: #f8b11a url(bg_dropbtn.png)
+}
+
+.game_section .header .actions .count_donate {
+    width: 161px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    background: #232120
+}
+
+.game_section .header .actions .count_donate b {
+    font-weight: 500;
+    margin-left: 5px
+}
+
+.game_section .roulette_block {
+    height: 520px;
+    width: 100%;
+    margin-top: 50px;
+    background: url(img/roulette_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.game_section .roulette_block .roulette_item {
+    width: 115px;
+    height: 115px;
+    background: url(img/roulette_item.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.game_section .roulette_block .roulette_item img {
+    width: 60%
+}
+
+.game_section .roulette_block .drop_list {
+    display: flex;
+    width: 90%;
+    height: 151px;
+    background: #af0000;
+    margin-top: 30px;
+    margin-bottom: 40px
+}
+
+.game_section .roulette_block .drop_list .left_block {
+    width: 5%;
+    height: 100%;
+    background: #232120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.game_section .roulette_block .drop_list .left_block .text {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 151px;
+    position: absolute;
+    text-align: center;
+    transform: rotate(-90deg)
+}
+
+.game_section .roulette_block .drop_list .content {
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+.game_section .roulette_block .drop_list .content .last_drop {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center
+}
+
+.game_section .roulette_block .drop_list .content .last_drop .roulette_item {
+    margin-left: 20px
+}
+
+.game_section .roulette_block .roulette_container {
+    width: 90%;
+    height: 151px;
+    background: url(img/roulcontainer_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative
+}
+
+.game_section .roulette_block .roulette_container .line {
+    height: 100%;
+    height: 180px;
+    position: absolute;
+    z-index: 3
+}
+
+.game_section .roulette_block .roulette_container .items_roulette {
+    display: flex;
+    position: absolute
+}
+
+.game_section .roulette_block .roulette_container .items_roulette .roulette_item {
+    margin: 0 10px
+}
+
+.game_section .roulette_block .roulette_actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.game_section .roulette_block .roulette_actions .btn_start {
+    height: 50px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+    background: #232120
+}
+
+.game_section .roulette_block .roulette_actions .btn_start.disabled {
+    opacity: 0.5
+}
+
+.game_section .roulette_block .roulette_actions .btn_start b {
+    margin-left: 5px;
+    font-weight: 600
+}
+
+.game_section .roulette_block .roulette_actions .btn_fast {
+    height: 50px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 10px;
+    background: #232120
+}
+
+.game_section .roulette_block .roulette_actions .btn_fast b {
+    margin-left: 5px;
+    font-weight: 600
+}
+
+.section__play .title_section {
+    margin-top: 10vh;
+    margin-bottom: 10vh
+}
+
+.section__play .play_container {
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    height: 519px;
+    background: url(https://russia-mobile.ru/img/play_container_bg.pngg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    clip-path: polygon(33% 0, 67% 0, 100% 10%, 100% 100%, 25% 100%, 0 100%, 0 10%)
+}
+
+.section__play .play_container .step {
+    transition: 0.3s all;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    cursor: pointer;
+    width: 383px
+}
+
+.section__play .play_container .step .server_block {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 10px
+}
+
+.section__play .play_container .step .button {
+    width: 170px;
+    height: 46px;
+    background: #2b251d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    outline: none
+}
+
+.section__play .play_container .step .button:hover {
+    background: #2b251d url(hover_btn.png);
+    background-position: center;
+    background-size: cover
+}
+
+.section__play .play_container .step .number_step {
+    margin-bottom: 36px;
+    clip-path: polygon(10% 0, 100% 7%, 100% 93%, 0% 100%);
+    background: url(img/step_bg.png);
+    width: 79px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 900
+}
+
+.section__play .play_container .step .number_step .number {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: -20px
+}
+
+.section__play .play_container .step:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transition: 0.3s all
+}
+
+.section__play .play_container .step .title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.section__play .play_container .step .desc {
+    font-size: 12px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.section__play .play_container .step._1 {
+    padding-right: 32px;
+    position: absolute;
+    left: 0;
+    clip-path: polygon(100% 0, 100% 0, 77% 100%, 25% 100%, 0 100%, 0 10%)
+}
+
+.section__play .play_container .step._2 {
+    width: 550px;
+    flex: none;
+    clip-path: polygon(100% 0, 84% 0, 100% 100%, 25% 100%, 0 100%, 16% 0)
+}
+
+.section__play .play_container .step._3 {
+    padding-left: 32px;
+    position: absolute;
+    right: 0;
+    clip-path: polygon(100% 10%, 100% 10%, 100% 10%, 100% 100%, 25% 100%, 23% 100%, 0 0)
+}
+
+.section__main {
+    position: relative
+}
+
+.section__main .row {
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2
+}
+
+.section__main .layer {
+    right: 0;
+    position: absolute;
+    height: 100%
+}
+
+.section__main .person {
+    position: absolute;
+    height: 80%;
+    right: 30%;
+    bottom: 0
+}
+
+.section__main .name_project {
+    margin-top: 25vh;
+    height: 24px;
+    padding: 0 5px;
+    width: auto;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #af0000 0%, #3e0000 12%, rgba(247, 183, 22, 0) 100%)
+}
+
+.section__main .slogan {
+    margin-top: 20px;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 47px;
+    color: #ffffff
+}
+
+.section__main .slogan .wrap {
+    color: #ffffff
+}
+
+.section__main .slogan span {
+    color: #af0000
+}
+
+.section__main .desc {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #e3d7be;
+    max-width: 550px
+}
+
+.section__main .actions {
+    margin-bottom: 35px;
+    margin-top: 42px;
+    display: flex;
+    align-items: center
+}
+
+.section__main .actions .btn_start {
+    height: 50px;
+    width: 170px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 30px;
+    background: linear-gradient(137deg, #af0000 0%, #af0000 100%)
+}
+
+.section__main .actions .btn_start:hover {
+    padding-top: 4px;
+    border-bottom: 4px solid #3445e0
+}
+
+.section__main .actions .line {
+    width: 100%;
+    max-width: 273px;
+    height: 3px;
+    background: #fff
+}
+
+.section__main .actions .social_links {
+    margin-right: 45px;
+    display: flex;
+    align-items: center
+}
+
+.section__main .actions .social_links a {
+    transition: 0.3s all;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 30px
+}
+
+.section__main .actions .social_links a:hover {
+    opacity: 0.5;
+    transition: 0.3s all
+}
+
+.server_block {
+    cursor: pointer;
+    width: 100%;
+    background: rgba(53, 52, 49, 0.9);
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px
+}
+
+.server_block::after {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    background: #af0000;
+    position: absolute;
+    left: -50%;
+    transform: rotate(65deg)
+}
+
+.server_block .server_number {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px
+}
+
+.server_block .server_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    color: #ffffff
+}
+
+.server_block .server_info .name {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.server_block .server_info .online {
+    font-size: 12px;
+    font-weight: 300;
+    display: flex
+}
+
+.server_block .server_info .online .count {
+    font-weight: 600;
+    margin-right: 3px;
+    color: #fff
+}
+
+.form_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff
+}
+
+.form_block button {
+    width: 170px;
+    height: 46px;
+    background: #2b251d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    outline: none
+}
+
+.form_block button:hover {
+    background: #2b251d url(hover_btn.png);
+    background-position: center;
+    background-size: cover
+}
+
+.form_block .title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px
+}
+
+.form_block .form_wrap {
+    margin-bottom: 22px;
+    width: 100%
+}
+
+.form_block .form_wrap .label {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 9px
+}
+
+.form_block .form_wrap .input_wrap {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center
+}
+
+.form_block .form_wrap .input_wrap .icon {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 7px;
+    z-index: 3
+}
+
+.form_block .form_wrap .input_wrap input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #2b251d;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 68px
+}
+
+.form_block .form_wrap .input_wrap .nice-select {
+    width: 100%;
+    height: 100%;
+    background: #2b251d;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 68px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    border: none
+}
+
+.form_block .form_wrap .input_wrap .nice-select .option.focus {
+    background: rgba(255, 255, 255, 0.2)
+}
+
+.form_block .form_wrap .input_wrap .nice-select .list {
+    width: 100%;
+    background-color: #2b251d;
+    border-radius: 0;
+    font-weight: 600;
+    color: #ffffff
+}
+
+.form_block .form_wrap .input_wrap .nice-select .list li {
+    border-radius: 0
+}
+
+.form_block .form_wrap .input_wrap .nice-select .list li:hover {
+    background: rgba(255, 255, 255, 0.2)
+}
+
+.title_gun {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500
+}
+
+.ko-progress-circle {
+    margin: 10px auto;
+    width: 82px;
+    height: 82px;
+    background-color: #353431;
+    border-radius: 50%
+}
+
+.ko-progress-circle .ko-progress-circle__slice,
+.ko-progress-circle .ko-progress-circle__fill {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+    border-radius: 50%
+}
+
+.ko-progress-circle .ko-progress-circle__slice {
+    clip: rect(0px, 82px, 82px, 41px)
+}
+
+.ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {
+    clip: rect(0px, 41px, 82px, 0px);
+    background-color: #af0000
+}
+
+.ko-progress-circle .ko-progress-circle__overlay {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    margin-left: 3.5px;
+    margin-top: 3.5px;
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+
+.ko-progress-circle .ko-progress-circle__overlay img {
+    width: 75%
+}
+
+.ko-progress-circle[data-progress="0"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="0"] .ko-progress-circle__fill {
+    transform: rotate(0deg)
+}
+
+.ko-progress-circle[data-progress="0"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(0deg)
+}
+
+.ko-progress-circle[data-progress="1"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="1"] .ko-progress-circle__fill {
+    transform: rotate(1.8deg)
+}
+
+.ko-progress-circle[data-progress="1"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(3.6deg)
+}
+
+.ko-progress-circle[data-progress="2"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="2"] .ko-progress-circle__fill {
+    transform: rotate(3.6deg)
+}
+
+.ko-progress-circle[data-progress="2"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(7.2deg)
+}
+
+.ko-progress-circle[data-progress="3"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="3"] .ko-progress-circle__fill {
+    transform: rotate(5.4deg)
+}
+
+.ko-progress-circle[data-progress="3"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(10.8deg)
+}
+
+.ko-progress-circle[data-progress="4"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="4"] .ko-progress-circle__fill {
+    transform: rotate(7.2deg)
+}
+
+.ko-progress-circle[data-progress="4"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(14.4deg)
+}
+
+.ko-progress-circle[data-progress="5"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="5"] .ko-progress-circle__fill {
+    transform: rotate(9deg)
+}
+
+.ko-progress-circle[data-progress="5"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(18deg)
+}
+
+.ko-progress-circle[data-progress="6"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="6"] .ko-progress-circle__fill {
+    transform: rotate(10.8deg)
+}
+
+.ko-progress-circle[data-progress="6"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(21.6deg)
+}
+
+.ko-progress-circle[data-progress="7"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="7"] .ko-progress-circle__fill {
+    transform: rotate(12.6deg)
+}
+
+.ko-progress-circle[data-progress="7"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(25.2deg)
+}
+
+.ko-progress-circle[data-progress="8"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="8"] .ko-progress-circle__fill {
+    transform: rotate(14.4deg)
+}
+
+.ko-progress-circle[data-progress="8"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(28.8deg)
+}
+
+.ko-progress-circle[data-progress="9"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="9"] .ko-progress-circle__fill {
+    transform: rotate(16.2deg)
+}
+
+.ko-progress-circle[data-progress="9"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(32.4deg)
+}
+
+.ko-progress-circle[data-progress="10"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="10"] .ko-progress-circle__fill {
+    transform: rotate(18deg)
+}
+
+.ko-progress-circle[data-progress="10"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(36deg)
+}
+
+.ko-progress-circle[data-progress="11"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="11"] .ko-progress-circle__fill {
+    transform: rotate(19.8deg)
+}
+
+.ko-progress-circle[data-progress="11"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(39.6deg)
+}
+
+.ko-progress-circle[data-progress="12"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="12"] .ko-progress-circle__fill {
+    transform: rotate(21.6deg)
+}
+
+.ko-progress-circle[data-progress="12"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(43.2deg)
+}
+
+.ko-progress-circle[data-progress="13"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="13"] .ko-progress-circle__fill {
+    transform: rotate(23.4deg)
+}
+
+.ko-progress-circle[data-progress="13"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(46.8deg)
+}
+
+.ko-progress-circle[data-progress="14"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="14"] .ko-progress-circle__fill {
+    transform: rotate(25.2deg)
+}
+
+.ko-progress-circle[data-progress="14"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(50.4deg)
+}
+
+.ko-progress-circle[data-progress="15"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="15"] .ko-progress-circle__fill {
+    transform: rotate(27deg)
+}
+
+.ko-progress-circle[data-progress="15"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(54deg)
+}
+
+.ko-progress-circle[data-progress="16"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="16"] .ko-progress-circle__fill {
+    transform: rotate(28.8deg)
+}
+
+.ko-progress-circle[data-progress="16"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(57.6deg)
+}
+
+.ko-progress-circle[data-progress="17"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="17"] .ko-progress-circle__fill {
+    transform: rotate(30.6deg)
+}
+
+.ko-progress-circle[data-progress="17"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(61.2deg)
+}
+
+.ko-progress-circle[data-progress="18"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="18"] .ko-progress-circle__fill {
+    transform: rotate(32.4deg)
+}
+
+.ko-progress-circle[data-progress="18"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(64.8deg)
+}
+
+.ko-progress-circle[data-progress="19"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="19"] .ko-progress-circle__fill {
+    transform: rotate(34.2deg)
+}
+
+.ko-progress-circle[data-progress="19"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(68.4deg)
+}
+
+.ko-progress-circle[data-progress="20"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="20"] .ko-progress-circle__fill {
+    transform: rotate(36deg)
+}
+
+.ko-progress-circle[data-progress="20"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(72deg)
+}
+
+.ko-progress-circle[data-progress="21"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="21"] .ko-progress-circle__fill {
+    transform: rotate(37.8deg)
+}
+
+.ko-progress-circle[data-progress="21"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(75.6deg)
+}
+
+.ko-progress-circle[data-progress="22"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="22"] .ko-progress-circle__fill {
+    transform: rotate(39.6deg)
+}
+
+.ko-progress-circle[data-progress="22"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(79.2deg)
+}
+
+.ko-progress-circle[data-progress="23"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="23"] .ko-progress-circle__fill {
+    transform: rotate(41.4deg)
+}
+
+.ko-progress-circle[data-progress="23"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(82.8deg)
+}
+
+.ko-progress-circle[data-progress="24"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="24"] .ko-progress-circle__fill {
+    transform: rotate(43.2deg)
+}
+
+.ko-progress-circle[data-progress="24"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(86.4deg)
+}
+
+.ko-progress-circle[data-progress="25"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="25"] .ko-progress-circle__fill {
+    transform: rotate(45deg)
+}
+
+.ko-progress-circle[data-progress="25"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(90deg)
+}
+
+.ko-progress-circle[data-progress="26"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="26"] .ko-progress-circle__fill {
+    transform: rotate(46.8deg)
+}
+
+.ko-progress-circle[data-progress="26"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(93.6deg)
+}
+
+.ko-progress-circle[data-progress="27"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="27"] .ko-progress-circle__fill {
+    transform: rotate(48.6deg)
+}
+
+.ko-progress-circle[data-progress="27"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(97.2deg)
+}
+
+.ko-progress-circle[data-progress="28"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="28"] .ko-progress-circle__fill {
+    transform: rotate(50.4deg)
+}
+
+.ko-progress-circle[data-progress="28"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(100.8deg)
+}
+
+.ko-progress-circle[data-progress="29"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="29"] .ko-progress-circle__fill {
+    transform: rotate(52.2deg)
+}
+
+.ko-progress-circle[data-progress="29"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(104.4deg)
+}
+
+.ko-progress-circle[data-progress="30"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="30"] .ko-progress-circle__fill {
+    transform: rotate(54deg)
+}
+
+.ko-progress-circle[data-progress="30"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(108deg)
+}
+
+.ko-progress-circle[data-progress="31"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="31"] .ko-progress-circle__fill {
+    transform: rotate(55.8deg)
+}
+
+.ko-progress-circle[data-progress="31"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(111.6deg)
+}
+
+.ko-progress-circle[data-progress="32"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="32"] .ko-progress-circle__fill {
+    transform: rotate(57.6deg)
+}
+
+.ko-progress-circle[data-progress="32"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(115.2deg)
+}
+
+.ko-progress-circle[data-progress="33"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="33"] .ko-progress-circle__fill {
+    transform: rotate(59.4deg)
+}
+
+.ko-progress-circle[data-progress="33"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(118.8deg)
+}
+
+.ko-progress-circle[data-progress="34"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="34"] .ko-progress-circle__fill {
+    transform: rotate(61.2deg)
+}
+
+.ko-progress-circle[data-progress="34"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(122.4deg)
+}
+
+.ko-progress-circle[data-progress="35"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="35"] .ko-progress-circle__fill {
+    transform: rotate(63deg)
+}
+
+.ko-progress-circle[data-progress="35"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(126deg)
+}
+
+.ko-progress-circle[data-progress="36"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="36"] .ko-progress-circle__fill {
+    transform: rotate(64.8deg)
+}
+
+.ko-progress-circle[data-progress="36"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(129.6deg)
+}
+
+.ko-progress-circle[data-progress="37"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="37"] .ko-progress-circle__fill {
+    transform: rotate(66.6deg)
+}
+
+.ko-progress-circle[data-progress="37"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(133.2deg)
+}
+
+.ko-progress-circle[data-progress="38"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="38"] .ko-progress-circle__fill {
+    transform: rotate(68.4deg)
+}
+
+.ko-progress-circle[data-progress="38"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(136.8deg)
+}
+
+.ko-progress-circle[data-progress="39"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="39"] .ko-progress-circle__fill {
+    transform: rotate(70.2deg)
+}
+
+.ko-progress-circle[data-progress="39"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(140.4deg)
+}
+
+.ko-progress-circle[data-progress="40"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="40"] .ko-progress-circle__fill {
+    transform: rotate(72deg)
+}
+
+.ko-progress-circle[data-progress="40"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(144deg)
+}
+
+.ko-progress-circle[data-progress="41"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="41"] .ko-progress-circle__fill {
+    transform: rotate(73.8deg)
+}
+
+.ko-progress-circle[data-progress="41"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(147.6deg)
+}
+
+.ko-progress-circle[data-progress="42"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="42"] .ko-progress-circle__fill {
+    transform: rotate(75.6deg)
+}
+
+.ko-progress-circle[data-progress="42"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(151.2deg)
+}
+
+.ko-progress-circle[data-progress="43"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="43"] .ko-progress-circle__fill {
+    transform: rotate(77.4deg)
+}
+
+.ko-progress-circle[data-progress="43"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(154.8deg)
+}
+
+.ko-progress-circle[data-progress="44"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="44"] .ko-progress-circle__fill {
+    transform: rotate(79.2deg)
+}
+
+.ko-progress-circle[data-progress="44"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(158.4deg)
+}
+
+.ko-progress-circle[data-progress="45"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="45"] .ko-progress-circle__fill {
+    transform: rotate(81deg)
+}
+
+.ko-progress-circle[data-progress="45"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(162deg)
+}
+
+.ko-progress-circle[data-progress="46"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="46"] .ko-progress-circle__fill {
+    transform: rotate(82.8deg)
+}
+
+.ko-progress-circle[data-progress="46"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(165.6deg)
+}
+
+.ko-progress-circle[data-progress="47"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="47"] .ko-progress-circle__fill {
+    transform: rotate(84.6deg)
+}
+
+.ko-progress-circle[data-progress="47"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(169.2deg)
+}
+
+.ko-progress-circle[data-progress="48"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="48"] .ko-progress-circle__fill {
+    transform: rotate(86.4deg)
+}
+
+.ko-progress-circle[data-progress="48"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(172.8deg)
+}
+
+.ko-progress-circle[data-progress="49"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="49"] .ko-progress-circle__fill {
+    transform: rotate(88.2deg)
+}
+
+.ko-progress-circle[data-progress="49"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(176.4deg)
+}
+
+.ko-progress-circle[data-progress="50"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="50"] .ko-progress-circle__fill {
+    transform: rotate(90deg)
+}
+
+.ko-progress-circle[data-progress="50"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(180deg)
+}
+
+.ko-progress-circle[data-progress="51"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="51"] .ko-progress-circle__fill {
+    transform: rotate(91.8deg)
+}
+
+.ko-progress-circle[data-progress="51"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(183.6deg)
+}
+
+.ko-progress-circle[data-progress="52"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="52"] .ko-progress-circle__fill {
+    transform: rotate(93.6deg)
+}
+
+.ko-progress-circle[data-progress="52"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(187.2deg)
+}
+
+.ko-progress-circle[data-progress="53"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="53"] .ko-progress-circle__fill {
+    transform: rotate(95.4deg)
+}
+
+.ko-progress-circle[data-progress="53"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(190.8deg)
+}
+
+.ko-progress-circle[data-progress="54"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="54"] .ko-progress-circle__fill {
+    transform: rotate(97.2deg)
+}
+
+.ko-progress-circle[data-progress="54"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(194.4deg)
+}
+
+.ko-progress-circle[data-progress="55"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="55"] .ko-progress-circle__fill {
+    transform: rotate(99deg)
+}
+
+.ko-progress-circle[data-progress="55"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(198deg)
+}
+
+.ko-progress-circle[data-progress="56"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="56"] .ko-progress-circle__fill {
+    transform: rotate(100.8deg)
+}
+
+.ko-progress-circle[data-progress="56"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(201.6deg)
+}
+
+.ko-progress-circle[data-progress="57"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="57"] .ko-progress-circle__fill {
+    transform: rotate(102.6deg)
+}
+
+.ko-progress-circle[data-progress="57"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(205.2deg)
+}
+
+.ko-progress-circle[data-progress="58"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="58"] .ko-progress-circle__fill {
+    transform: rotate(104.4deg)
+}
+
+.ko-progress-circle[data-progress="58"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(208.8deg)
+}
+
+.ko-progress-circle[data-progress="59"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="59"] .ko-progress-circle__fill {
+    transform: rotate(106.2deg)
+}
+
+.ko-progress-circle[data-progress="59"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(212.4deg)
+}
+
+.ko-progress-circle[data-progress="60"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="60"] .ko-progress-circle__fill {
+    transform: rotate(108deg)
+}
+
+.ko-progress-circle[data-progress="60"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(216deg)
+}
+
+.ko-progress-circle[data-progress="61"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="61"] .ko-progress-circle__fill {
+    transform: rotate(109.8deg)
+}
+
+.ko-progress-circle[data-progress="61"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(219.6deg)
+}
+
+.ko-progress-circle[data-progress="62"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="62"] .ko-progress-circle__fill {
+    transform: rotate(111.6deg)
+}
+
+.ko-progress-circle[data-progress="62"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(223.2deg)
+}
+
+.ko-progress-circle[data-progress="63"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="63"] .ko-progress-circle__fill {
+    transform: rotate(113.4deg)
+}
+
+.ko-progress-circle[data-progress="63"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(226.8deg)
+}
+
+.ko-progress-circle[data-progress="64"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="64"] .ko-progress-circle__fill {
+    transform: rotate(115.2deg)
+}
+
+.ko-progress-circle[data-progress="64"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(230.4deg)
+}
+
+.ko-progress-circle[data-progress="65"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="65"] .ko-progress-circle__fill {
+    transform: rotate(117deg)
+}
+
+.ko-progress-circle[data-progress="65"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(234deg)
+}
+
+.ko-progress-circle[data-progress="66"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="66"] .ko-progress-circle__fill {
+    transform: rotate(118.8deg)
+}
+
+.ko-progress-circle[data-progress="66"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(237.6deg)
+}
+
+.ko-progress-circle[data-progress="67"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="67"] .ko-progress-circle__fill {
+    transform: rotate(120.6deg)
+}
+
+.ko-progress-circle[data-progress="67"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(241.2deg)
+}
+
+.ko-progress-circle[data-progress="68"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="68"] .ko-progress-circle__fill {
+    transform: rotate(122.4deg)
+}
+
+.ko-progress-circle[data-progress="68"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(244.8deg)
+}
+
+.ko-progress-circle[data-progress="69"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="69"] .ko-progress-circle__fill {
+    transform: rotate(124.2deg)
+}
+
+.ko-progress-circle[data-progress="69"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(248.4deg)
+}
+
+.ko-progress-circle[data-progress="70"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="70"] .ko-progress-circle__fill {
+    transform: rotate(126deg)
+}
+
+.ko-progress-circle[data-progress="70"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(252deg)
+}
+
+.ko-progress-circle[data-progress="71"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="71"] .ko-progress-circle__fill {
+    transform: rotate(127.8deg)
+}
+
+.ko-progress-circle[data-progress="71"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(255.6deg)
+}
+
+.ko-progress-circle[data-progress="72"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="72"] .ko-progress-circle__fill {
+    transform: rotate(129.6deg)
+}
+
+.ko-progress-circle[data-progress="72"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(259.2deg)
+}
+
+.ko-progress-circle[data-progress="73"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="73"] .ko-progress-circle__fill {
+    transform: rotate(131.4deg)
+}
+
+.ko-progress-circle[data-progress="73"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(262.8deg)
+}
+
+.ko-progress-circle[data-progress="74"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="74"] .ko-progress-circle__fill {
+    transform: rotate(133.2deg)
+}
+
+.ko-progress-circle[data-progress="74"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(266.4deg)
+}
+
+.ko-progress-circle[data-progress="75"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="75"] .ko-progress-circle__fill {
+    transform: rotate(135deg)
+}
+
+.ko-progress-circle[data-progress="75"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(270deg)
+}
+
+.ko-progress-circle[data-progress="76"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="76"] .ko-progress-circle__fill {
+    transform: rotate(136.8deg)
+}
+
+.ko-progress-circle[data-progress="76"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(273.6deg)
+}
+
+.ko-progress-circle[data-progress="77"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="77"] .ko-progress-circle__fill {
+    transform: rotate(138.6deg)
+}
+
+.ko-progress-circle[data-progress="77"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(277.2deg)
+}
+
+.ko-progress-circle[data-progress="78"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="78"] .ko-progress-circle__fill {
+    transform: rotate(140.4deg)
+}
+
+.ko-progress-circle[data-progress="78"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(280.8deg)
+}
+
+.ko-progress-circle[data-progress="79"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="79"] .ko-progress-circle__fill {
+    transform: rotate(142.2deg)
+}
+
+.ko-progress-circle[data-progress="79"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(284.4deg)
+}
+
+.ko-progress-circle[data-progress="80"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="80"] .ko-progress-circle__fill {
+    transform: rotate(144deg)
+}
+
+.ko-progress-circle[data-progress="80"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(288deg)
+}
+
+.ko-progress-circle[data-progress="81"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="81"] .ko-progress-circle__fill {
+    transform: rotate(145.8deg)
+}
+
+.ko-progress-circle[data-progress="81"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(291.6deg)
+}
+
+.ko-progress-circle[data-progress="82"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="82"] .ko-progress-circle__fill {
+    transform: rotate(147.6deg)
+}
+
+.ko-progress-circle[data-progress="82"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(295.2deg)
+}
+
+.ko-progress-circle[data-progress="83"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="83"] .ko-progress-circle__fill {
+    transform: rotate(149.4deg)
+}
+
+.ko-progress-circle[data-progress="83"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(298.8deg)
+}
+
+.ko-progress-circle[data-progress="84"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="84"] .ko-progress-circle__fill {
+    transform: rotate(151.2deg)
+}
+
+.ko-progress-circle[data-progress="84"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(302.4deg)
+}
+
+.ko-progress-circle[data-progress="85"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="85"] .ko-progress-circle__fill {
+    transform: rotate(153deg)
+}
+
+.ko-progress-circle[data-progress="85"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(306deg)
+}
+
+.ko-progress-circle[data-progress="86"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="86"] .ko-progress-circle__fill {
+    transform: rotate(154.8deg)
+}
+
+.ko-progress-circle[data-progress="86"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(309.6deg)
+}
+
+.ko-progress-circle[data-progress="87"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="87"] .ko-progress-circle__fill {
+    transform: rotate(156.6deg)
+}
+
+.ko-progress-circle[data-progress="87"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(313.2deg)
+}
+
+.ko-progress-circle[data-progress="88"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="88"] .ko-progress-circle__fill {
+    transform: rotate(158.4deg)
+}
+
+.ko-progress-circle[data-progress="88"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(316.8deg)
+}
+
+.ko-progress-circle[data-progress="89"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="89"] .ko-progress-circle__fill {
+    transform: rotate(160.2deg)
+}
+
+.ko-progress-circle[data-progress="89"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(320.4deg)
+}
+
+.ko-progress-circle[data-progress="90"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="90"] .ko-progress-circle__fill {
+    transform: rotate(162deg)
+}
+
+.ko-progress-circle[data-progress="90"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(324deg)
+}
+
+.ko-progress-circle[data-progress="91"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="91"] .ko-progress-circle__fill {
+    transform: rotate(163.8deg)
+}
+
+.ko-progress-circle[data-progress="91"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(327.6deg)
+}
+
+.ko-progress-circle[data-progress="92"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="92"] .ko-progress-circle__fill {
+    transform: rotate(165.6deg)
+}
+
+.ko-progress-circle[data-progress="92"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(331.2deg)
+}
+
+.ko-progress-circle[data-progress="93"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="93"] .ko-progress-circle__fill {
+    transform: rotate(167.4deg)
+}
+
+.ko-progress-circle[data-progress="93"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(334.8deg)
+}
+
+.ko-progress-circle[data-progress="94"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="94"] .ko-progress-circle__fill {
+    transform: rotate(169.2deg)
+}
+
+.ko-progress-circle[data-progress="94"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(338.4deg)
+}
+
+.ko-progress-circle[data-progress="95"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="95"] .ko-progress-circle__fill {
+    transform: rotate(171deg)
+}
+
+.ko-progress-circle[data-progress="95"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(342deg)
+}
+
+.ko-progress-circle[data-progress="96"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="96"] .ko-progress-circle__fill {
+    transform: rotate(172.8deg)
+}
+
+.ko-progress-circle[data-progress="96"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(345.6deg)
+}
+
+.ko-progress-circle[data-progress="97"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="97"] .ko-progress-circle__fill {
+    transform: rotate(174.6deg)
+}
+
+.ko-progress-circle[data-progress="97"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(349.2deg)
+}
+
+.ko-progress-circle[data-progress="98"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="98"] .ko-progress-circle__fill {
+    transform: rotate(176.4deg)
+}
+
+.ko-progress-circle[data-progress="98"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(352.8deg)
+}
+
+.ko-progress-circle[data-progress="99"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="99"] .ko-progress-circle__fill {
+    transform: rotate(178.2deg)
+}
+
+.ko-progress-circle[data-progress="99"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(356.4deg)
+}
+
+.ko-progress-circle[data-progress="100"] .ko-progress-circle__slice.full,
+.ko-progress-circle[data-progress="100"] .ko-progress-circle__fill {
+    transform: rotate(180deg)
+}
+
+.ko-progress-circle[data-progress="100"] .ko-progress-circle__fill.ko-progress-circle__bar {
+    transform: rotate(360deg)
+}
+
+.profile_section {
+    min-height: calc(100vh - 154px)
+}
+
+.profile_section .row {
+    padding: 100px 0px
+}
+
+.profile_section .tabsList {
+    width: 100%;
+    display: flex;
+    margin-bottom: 24px
+}
+
+.profile_section .tabsList li {
+    background: #232120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    height: 47px;
+    width: 100%
+}
+
+.profile_section .tabsList li i {
+    display: none
+}
+
+.profile_section .tabsList li:hover,
+.profile_section .tabsList li.active_tab {
+    border-bottom: 4px solid #f9b51c;
+    padding-top: 4px
+}
+
+.profile_section .content_tabs {
+    width: 100%
+}
+
+.profile_section .content_tabs .content {
+    border: none;
+    outline: none;
+    width: 100%
+}
+
+.profile_section .content_tabs .content .change_pass {
+    background: url(img/modal_login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 28px 20px
+}
+
+.profile_section .content_tabs .content .property_block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background: rgba(46, 40, 30, 0.5)
+}
+
+.profile_section .content_tabs .content .property_block:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.profile_section .content_tabs .content .property_block .images {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.profile_section .content_tabs .content .property_block .images.house {
+    background: url(img/house_profile.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.profile_section .content_tabs .content .property_block .images.garage {
+    background: url(img/img/garage_profile.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.profile_section .content_tabs .content .property_block .images.garage img {
+    width: 55%;
+    transform: translateY(18px)
+}
+
+.profile_section .content_tabs .content .property_block .images.business {
+    background: url(img/business_profile.png);
+    background-position: center;
+    background-size: cover
+}
+
+.profile_section .content_tabs .content .property_block .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px
+}
+
+.profile_section .content_tabs .content .property_block .info .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.profile_section .content_tabs .content .property_block .info .stats_list {
+    width: 100%
+}
+
+.profile_section .content_tabs .content .property_block .info .stats_list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.profile_section .content_tabs .content .property_block .info .stats_list li:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.profile_section .content_tabs .content .property_block .info .stats_list li .label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff
+}
+
+.profile_section .content_tabs .content .property_block .info .stats_list li .value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #af0000
+}
+
+.profile_section .content_tabs .content .stats_block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px 10px;
+    background: rgba(46, 40, 30, 0.5)
+}
+
+.profile_section .content_tabs .content .stats_block:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.profile_section .content_tabs .content .stats_block .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold
+}
+
+.profile_section .content_tabs .content .stats_block .stats_list {
+    width: 100%
+}
+
+.profile_section .content_tabs .content .stats_block .stats_list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.profile_section .content_tabs .content .stats_block .stats_list li:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.profile_section .content_tabs .content .stats_block .stats_list li .label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff
+}
+
+.profile_section .content_tabs .content .stats_block .stats_list li .value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #af0000
+}
+
+.profile_section .exit_btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+    background: #e04242
+}
+
+.profile_section .exit_btn .text {
+    z-index: 2;
+    position: relative
+}
+
+.profile_section .exit_btn::after {
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    content: "";
+    transition: 0.3s all;
+    position: absolute
+}
+
+.profile_section .exit_btn:hover::after {
+    transition: 0.3s all;
+    background: #af3939;
+    height: 100%;
+    bottom: 0
+}
+
+.profile_section .profile_block {
+    width: 100%;
+    padding: 0 11px;
+    margin-bottom: 20px;
+    padding-top: 47px;
+    padding-bottom: 16px;
+    background: url(https://russia-mobile.ru/img/profile_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.profile_section .profile_block .mini_stats {
+    background: #af0000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.profile_section .profile_block .mini_stats:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.profile_section .profile_block .mini_stats .text {
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: #353431
+}
+
+.profile_section .profile_block .mini_stats .value {
+    min-width: 25%;
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #af0000;
+    background: #353431
+}
+
+.profile_section .profile_block .level_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.profile_section .profile_block .level_block .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff
+}
+
+.profile_section .profile_block .level_block .progress_bar {
+    margin-top: 5px;
+    width: 90%;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 2px
+}
+
+.profile_section .profile_block .level_block .progress_bar .value {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    background: #af0000
+}
+
+.profile_section .profile_block .level_block .exp {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600
+}
+
+.profile_section .profile_block .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.profile_section .profile_block .header .user_pers {
+    position: relative;
+    display: flex;
+    margin-left: -24px;
+    margin-right: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 128px;
+    background: url(https://russia-mobile.ru/img/pers_bg.png)
+}
+
+.profile_section .profile_block .header .user_pers img {
+    width: 100%;
+    position: absolute;
+    bottom: 10px
+}
+
+.profile_section .profile_block .header .stats .info {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+.profile_section .profile_block .header .stats .info .label {
+    width: 100%;
+    font-size: 12px;
+    color: #ffffff
+}
+
+.profile_section .profile_block .header .stats .info .value {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff
+}
+
+.section__shop .row {
+    min-height: calc(100vh - 154px);
+    display: flex;
+    align-items: center
+}
+
+
+
+.donate_fc1 {
+    color: black;
+    width: 100%;
+    max-width: 560px;
+    background-color: white;
+    height: 48px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 9px 9px;
+    border-radius: 5px;
+    transition: border-color ease-in-out 0.15s;
+    background-image: none;
+    background-clip: padding-box;
+    outline: none;
+    border: 0px solid #dcdfe3;
+    align-items: center;
+    text-align: center;
+}
+
+.donate_fgc3 {
+     font-size: 50px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    margin-top: 10%;
+    background-image: none;
+    
+    outline: none;
+    border: 0px solid #dcdfe3;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.donate_fc2 {
+    color: black;
+    width: 0%;
+    max-width: 0px;
+    background-color: white;
+    height: 48px;
+    font-size: 0%;
+    line-height: 20px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0px 0px;
+    border-radius: 0px;
+    transition: border-color ease-in-out 0.15s;
+    background-image: none;
+    background-clip: padding-box;
+    outline: none;
+    border: 0px solid #dcdfe3;
+    margin-bottom: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+.text-center{
+	background: black;
+}
+
+.donate_fgc1 {
+    margin-bottom: 10%;
+    text-align: center;
+    width: 100%;
+    color: black;
+    border-color: black;
+}
+
+.donate_fgc2 {
+	margin-top: 0;
+   margin-bottom: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+
+.section__shop .row .donate_container .picture_block img {
+    width: 90%;
+    
+    position: absolute;
+    align-items: center;
+}
+
+.section__shop .row .donate_container .form_block {
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column
+}
+
+.section__map {
+    width: 100%;
+    min-height: calc(100vh - 154px)
+}
+
+.section__map .map_wr {
+    width: 100%;
+    min-height: calc(100vh - 154px)
+}
+
+section {
+    min-height: calc(100vh - 154px);
+    overflow-x: hidden
+}
+
+footer {
+    background: #2b251d
+}
+
+footer .row {
+	    font-size: 13px;
+    height: 84px;
+    align-items: center;
+    justify-content: space-between
+}
+
+footer .project_info {
+    display: flex;
+    flex-direction: column
+}
+
+footer .project_info .name {
+    color: #ffffff
+}
+
+footer .project_info .desc {
+    color: #b6a690
+}
+
+footer .logo_footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+footer .logo_footer img {
+    height: 50%
+}
+
+footer .footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+footer .footer_links a {
+    color: #ffffff
+}
+
+footer .footer_links a.color {
+    color: #af0000
+}
+
+.form_block .bonus_status {
+    width: auto;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: inherit;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*# sourceMappingURL=style.min.css.map */
